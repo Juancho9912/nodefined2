@@ -12,7 +12,7 @@ import Login from './components/login/Login';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <p>hola mundo</p>
+    element: <spam>hola mundo</spam>
   },
   {
     path: '/login',
@@ -24,5 +24,8 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router}/>
+    <div className='first-circle'></div>
+    <div className='second-circle'></div>
+    <div className='third-circle'></div>
   </React.StrictMode>
 )

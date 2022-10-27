@@ -13,58 +13,100 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --primary-color: #25ccfd;
+  --secondaty-color: #003a62;
+  --third-color: #974900;
+  --fourth-color: #e6f4f1;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+*, h1, p {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  /* margin: 0; */
+  /* padding: 0; */
+  background-color: #fff;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.first-circle{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  top: -100px;
+  left: -5px;
+  background-color: var(--third-color);
+  position: absolute;
+  z-index: 2;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.first-circle::after{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #7a3b00;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 60px;
+  left: 80px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.first-circle::before{
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: #7a3b00;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 50px;
+  left: 130px;
 }
+
+.second-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: -20px;
+  right: 50px;
+  background-color: #7a3b00;
+  position: absolute;
+  z-index: 1;
+}
+
+.third-circle {
+  width: 100px;
+  height: 170px;
+  border-radius: 50px;
+  bottom: -60px;
+  right: 50px;
+  background-color: var(--third-color);
+  position: absolute;
+  z-index: 1;
+}
+
+.third-circle::after{
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #7a3b00;
+  position: absolute;
+  border-radius: 50%;
+  top: 50px;
+  left: 60px;
+}
+
+.third-circle::before{
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: #7a3b00;
+  position: absolute;
+  border-radius: 50%;
+  top: 45px;
+  left: 20px;
+}
+
+
