@@ -109,4 +109,12 @@ body {
   left: 20px;
 }
 
+.MuiBox-root{
+  padding: 0 !important;
+}
+
+.MuiFormControl-root{
+  width: 100%;
+}
+
 

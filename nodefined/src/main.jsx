@@ -6,7 +6,7 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
-import Login from './components/login/Login';
+import LoginMenu from './components/loginMenu/LoginMenu';
 
 
 const router = createBrowserRouter([
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/login',
-    element: <Login />
+    element: <LoginMenu />
   }
 ])
 
