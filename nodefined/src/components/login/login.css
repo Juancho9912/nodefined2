@@ -17,13 +17,5 @@
     margin-top: 1rem;
 }
 
-.link{
-    color: var(--font-color);
-    cursor: pointer;
-}
 
-.link:hover{
-    color: var(--primary-color);
-    cursor: pointer;
-}
 

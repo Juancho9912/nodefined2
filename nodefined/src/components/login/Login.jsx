@@ -8,7 +8,7 @@ const Login = () => {
   return (
     <div className="loginContainer">
       <TextField
-        style={{ margin: "2rem 0" }}
+        style={{ margin: "1rem 0" }}
         id="standard-basic"
         label="Email"
         variant="standard"
@@ -20,10 +20,10 @@ const Login = () => {
         variant="standard"
       />
       <div className="buttomContainer">
-        <Button variant="outlined" startIcon={<LoginIcon />}>
+        <Button style={{fontSize:"12px"}} variant="container" startIcon={<LoginIcon />}>
           Ingresar
         </Button>
-        <span className="link">¿No tienes cuenta?</span>
+        <span className="link">¿Olvido contraseña?</span>
       </div>
     </div>
   );
