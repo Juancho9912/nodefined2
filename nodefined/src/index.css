@@ -13,10 +13,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --primary-color: #25ccfd;
-  --secondaty-color: #003a62;
+  --primary-color: #1976d2;
+  --secondary-color: #003a62;
   --third-color: #974900;
   --fourth-color: #e6f4f1;
+  --font-color: rgb(66, 66, 66);
 }
 
 *, h1, p {
