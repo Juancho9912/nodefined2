@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Login from '../login/Login';
+import Register from '../register/Register';
 
 const LoginMenu = () => {
 
@@ -57,7 +58,7 @@ const LoginMenu = () => {
           <Login />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          Item Two
+          <Register />
         </TabPanel>
       </Box>
       </div>

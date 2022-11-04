@@ -19,7 +19,7 @@ const Login = () => {
         label="Contraseña"
         variant="standard"
       />
-      <div className="buttomContainer">
+      <div className="buttonContainer">
         <Button variant="outlined" startIcon={<LoginIcon />}>
           Ingresar
         </Button>
