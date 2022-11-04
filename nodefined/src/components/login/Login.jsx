@@ -14,12 +14,12 @@ const Login = () => {
         variant="standard"
       />
       <TextField
-        className="input"
+         style={{ marginBottom: "0.5rem " }}
         id="standard-basic"
         label="Contraseña"
         variant="standard"
       />
-      <div className="buttomContainer">
+      <div className="buttonContainer">
         <Button style={{fontSize:"12px"}} variant="contained" startIcon={<LoginIcon />}>
           Ingresar
         </Button>
